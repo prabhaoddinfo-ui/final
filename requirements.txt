@@ -1,11 +1,27 @@
-streamlit==1.32.0
+# Core web framework
 fastapi==0.104.1
 uvicorn==0.24.0
-pandas==2.1.3
 python-multipart==0.0.6
+starlette==0.27.0
+
+# Streamlit dashboard
+streamlit==1.32.0
+
+# Data
+pandas==2.1.3
+openpyxl==3.1.2
+
+# Email sending — SendGrid HTTP API (replaces raw SMTP, works on Render free tier)
+sendgrid==6.11.0
+
+# HTTP requests (used by SendGrid helper + health checks)
+requests==2.31.0
+
+# Email validation
 dnspython==2.4.2
-jinja2==3.1.2
-chardet==5.2.0
-html2text==2020.1.16
 email-validator==2.1.1
+
+# Pydantic / typing
 pydantic==2.5.0
+annotated-types==0.7.0
+typing_extensions==4.12.2
